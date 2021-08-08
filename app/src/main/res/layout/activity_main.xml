@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_account_round"
+            app:tint="@color/purple_700"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounback_lightblue"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="20dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingStart="30dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome !"
+                android:textSize="35sp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="@color/purple_700"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PerfectPataa"
+                android:textSize="40sp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loginnumberlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Login -"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/purple_200"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter mobile number in below field"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/purple_200"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/purple_500"
+                app:prefixText="+91"
+                app:prefixTextColor="@color/black"
+                app:counterMaxLength="10"
+                app:counterEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <EditText
+                    android:id="@+id/edttxt_entermobilenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_getotp"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="get otp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/roboto_bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_otplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- OTP -"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/purple_200"
+                />
+            <TextView
+                android:id="@+id/txt_enterotpsenton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/purple_200"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/purple_500"
+                app:counterMaxLength="6"
+                app:counterEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <EditText
+                    android:id="@+id/edttxt_enterotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter OTP Here"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/txt_retryforotp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retry"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/purple_500"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:backgroundTint="@color/purple_200"
+                    android:background="?android:selectableItemBackground"
+                    />
+
+                <Button
+                    android:id="@+id/btn_proceedotp"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:text="Proceed"
+                    android:layout_gravity=""
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_weight="2"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

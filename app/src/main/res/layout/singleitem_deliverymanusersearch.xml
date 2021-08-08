@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_singleitemIdorNum"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_consumerid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Consumer id"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="16dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/black"
+        android:drawableTint="@color/purple_200"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_account_round" />
+
+    <TextView
+        android:id="@+id/txt_consumerNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Consumer Number"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="16dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/black"
+        android:drawableTint="@color/purple_200"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_account_round" />
+
+</LinearLayout>

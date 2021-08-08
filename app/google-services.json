@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "715328582186",
+    "firebase_url": "https://perfectpataa-ecafe-default-rtdb.firebaseio.com",
+    "project_id": "perfectpataa-ecafe",
+    "storage_bucket": "perfectpataa-ecafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715328582186:android:a8b6aa549a8ca29cab4953",
+        "android_client_info": {
+          "package_name": "com.soban.perfectpataa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715328582186-lo6rk3357g1vc4oi7p55d0tqe6512ve2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soban.perfectpataa",
+            "certificate_hash": "418cbe727ecacbf0790c7a089ee0ceef8c7bcfdb"
+          }
+        },
+        {
+          "client_id": "715328582186-f6rogdsinp37s1nku22an6uvbnka9knl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAruBMfjfAX-setr9fNcAgKVnTrmkb7IfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715328582186-f6rogdsinp37s1nku22an6uvbnka9knl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
